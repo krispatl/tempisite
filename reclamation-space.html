@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reclamation Space – Temporary Institute</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    .hero-section {
+      height: 40vh;
+      min-height: 200px;
+    }
+    .hero-content {
+      padding: 30px 0;
+    }
+    .blog-date {
+      font-size: 0.95em;
+      color: #999;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .blog-post h3 {
+      font-size: 1.3em;
+      margin-top: 30px;
+      color: #66ccff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <img src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/Temp%20Pi%20LOGO%20STROKE.png?v=1731377899447" alt="Temporary Institute Logo" class="logo" />
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#fellows">Fellows</a></li>
+      <li><a href="/#projects">Projects</a></li>
+      <li><a href="/#blog">News</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="about-section">
+    <h2 data-aos="fade-down">Reclamation Space</h2>
+    <p class="blog-date" data-aos="fade-up">Published April 3rd, 2025</p>
+
+    <div class="core-values blog-post" style="max-width: 800px; margin: auto; line-height: 1.8;">
+      <p data-aos="fade-up">
+        In November 2023, while visiting California, artist and researcher Joe Davis engaged in a conversation with astronomer Jill Tarter during the SETI Institute’s anniversary celebration, where she was honored with a lifetime achievement award. Shortly after, a follow-up conversation with Tarter and geneticist George Church sparked a novel idea: transforming orbital debris—commonly known as “space junk”—into a practical tool for astronomy.
+      </p>
+      <p data-aos="fade-up" data-aos-delay="100">
+        Over the past six decades, defunct satellites, rocket stages, and fragments from exploded spacecraft have amassed in Earth's orbit. These objects now number in the millions, traveling at speeds many times faster than rifle bullets—posing both a hazard to current space missions and a persistent source of visual noise for astronomical observation.
+      </p>
+      <p data-aos="fade-up" data-aos-delay="200">
+        One classical method in astronomy, known as <strong>occultation</strong>, involves masking the light of a bright celestial object in order to reveal dimmer features nearby. Even something as ordinary as a telephone pole can function as an occultation tool under the right circumstances.
+      </p>
+
+      <h3 data-aos="fade-right">Telephone Pole Astronomy</h3>
+      <p data-aos="fade-up">
+        For example, when Jupiter is visible in the night sky, its moons are usually hidden from naked-eye view due to the planet’s glare. But if one positions themselves so Jupiter is just obscured behind a nearby pole, several of its moons become visible—sometimes even without binoculars. This basic principle extends to larger scales.
+      </p>
+
+      <h3 data-aos="fade-right">Occultation in Astronomy</h3>
+      <p data-aos="fade-up">
+        Occultation has been a valuable method for observing stars, planets, and even exoplanets. By precisely timing events where the Moon, asteroids, or other objects pass in front of celestial bodies, astronomers can extract data about size, rotation, and atmospheric composition. This is the same technique that has led to the discovery of numerous exoplanets by observing tiny flux variations during planetary transits.
+      </p>
+
+      <h3 data-aos="fade-right">Reclamation</h3>
+      <p data-aos="fade-up">
+        Applying this technique to space junk, however, requires precision. Davis and collaborators—including Kris Pilcher and Artem Burdanov—used the Gaia DR3 catalog to track stars with ultra-high precision. They initially accessed Two-Line Element (TLE) data for satellites in geosynchronous orbit from NORAD but later switched to the open-source CelesTrak due to usage limits.
+      </p>
+      <p data-aos="fade-up">
+        The team developed a custom Python-based software system with a graphical user interface. The tool calculates potential occultation events by matching satellite and star trajectories, accounting for telescope limitations, observation windows, and angular separation. It is currently tuned for the Teide Observatory in the Canary Islands, though the parameters are flexible.
+      </p>
+      <p data-aos="fade-up">
+        With calculations targeting angular separations of less than 0.003 arcseconds and a five-second time step, the system allows for highly accurate prediction of near-occultation events. This platform was co-developed with assistance from AI JOE, a fine-tuned artificial intelligence model trained by a coalition of institutions and independent researchers.
+      </p>
+      <p data-aos="fade-up">
+        The proof-of-concept data below shows a near-occultation of HD 99865, an 8th magnitude star located in Leo, approximately 190 light-years away. It was nearly occulted by COSMOS 2539, a Russian military communications satellite. The angular separation was just 0.468795 arcseconds.
+      </p>
+      <p data-aos="fade-up">
+        A version of this system is now live in one of MIT’s computing clusters, where it continues to process new observation opportunities.
+      </p>
+    </div>
+
+    <!-- Images -->
+    <div style="margin: 40px auto; max-width: 1000px; display: grid; gap: 20px;">
+      <img data-aos="zoom-in" src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/recbefore.jpeg?v=1743719026686" alt="Before occultation - HD 99865" style="width: 100%; border-radius: 8px;" />
+      <img data-aos="zoom-in" src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/reccduring.jpeg?v=1743719032573" alt="During occultation" style="width: 100%; border-radius: 8px;" />
+      <img data-aos="zoom-in" src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/recafter.jpeg?v=1743719030023" alt="After occultation" style="width: 100%; border-radius: 8px;" />
+    </div>
+
+    <!-- Video -->
+    <div data-aos="fade-up" style="text-align: center; margin-top: 30px;">
+      <video controls style="width: 100%; max-width: 800px; border-radius: 8px;">
+        <source src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/recvid.mp4?v=1743719905354" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p style="margin-top: 10px;">Time-lapse of orbital object motion over a 30-minute observation window.</p>
+    </div>
+  </section>
+
+  <!-- Donations Section -->
+  <section id="donations" class="donations-section" data-aos="fade-up">
+    <h2>Support Our Mission</h2>
+    <p>Our project thrives on institutional and individual support.</p>
+    <p>We offer consulting, maintain intellectual property rights, and collect royalties from innovations and publications to fuel the institute's ongoing growth and impact.</p>
+    <p>Your generous support helps us foster collaboration and advance knowledge in art and science.</p>
+    <a href="https://givebutter.com/TemporaryInstitute" class="cta-button">Donate Now</a>
+  </section>
+
+  <!-- AI Access -->
+  <section id="ai" class="donations-section" data-aos="fade-up">
+    <p>Access our advanced AI for Members Only</p>
+    <a href="https://Ai-joe.glitch.me" class="cta-button">AI</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Temporary Institute for Unification of Knowledge</p>
+    <p>A Massachusetts 501(c)(3) organization</p>
+    <p><a href="bylaws.pdf" target="_blank">View our Bylaws</a></p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>

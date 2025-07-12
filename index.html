@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Temporary Institute for Unification of Knowledge - Bridging Art, Science, and Technology
+  </title>
+  <meta name="description" content="The Temporary Institute for Unification of Knowledge fosters interdisciplinary collaboration in art, science, and technology." />
+  <meta name="keywords" content="art, science, technology, innovation, collaboration, Temporary Institute, Vitruvian ideals" />
+  <meta name="author" content="Temporary Institute for Unification of Knowledge" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://yourdomain.com/" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Temporary Institute for Unification of Knowledge",
+      "url": "https://yourdomain.com",
+      "logo": "https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/Temp%20Pi%20LOGO%20STROKE.png?v=1731377899447",
+      "description": "Fostering interdisciplinary collaboration in art, science, and technology.",
+      "sameAs": [
+        "https://facebook.com/YourPage",
+        "https://twitter.com/YourPage"
+      ]
+    }
+  </script>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+    }
+    .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      animation: fadeIn 5s ease-in-out;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .logo {
+      max-width: 3000px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #444444;
+      color: #ffffff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #666666;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    /* Navbar */
+    .navbar {
+      background-color: #111111;
+      color: #ffffff;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar ul {
+      list-style: none;
+    }
+    .navbar li {
+      display: inline;
+      margin: 0 15px;
+    }
+    .navbar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      padding: 5px;
+      transition: color 0.3s;
+    }
+    .navbar a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #666666;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s;
+    }
+    .navbar a:hover {
+      color: #cccccc;
+    }
+    .navbar a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    /* Introductory Blurb */
+    .intro-blurb {
+      background-color: #1e1e1e;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin: 20px auto;
+      max-width: 1000px;
+      border-radius: 8px;
+    }
+    /* About Section */
+    .about-section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #121212;
+      color: #ffffff;
+      line-height: 1.8;
+      border-bottom: 2px solid #333333;
+      position: relative;
+    }
+    .about-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 80%;
+      height: 100%;
+      background: url("https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/Tetractys.svg.png?v=1731380421040") center/cover;
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    .about-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #f1f1f1;
+      letter-spacing: 1px;
+    }
+    .about-section .intro {
+      font-size: 1.4em;
+      margin-bottom: 20px;
+    }
+    .about-section .mission {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .core-values {
+      margin: 40px 0;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .core-values h3 {
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      color: #f1f1f1;
+    }
+    .core-values ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .core-values ul li {
+      font-size: 1.1rem;
+      background-color: #222222;
+      padding: 10px 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    .core-values ul li::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, transparent, #333333);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .core-values ul li:hover::after {
+      opacity: 0.1;
+    }
+    /* Fellows Section */
+    .fellows-section {
+      padding: 60px;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .fellows-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #f1f1f1;
+    }
+    .fellows-section .intro {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      text-align: center;
+    }
+    /* Fellows Grid Layout */
+    .fellows-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .fellow-item {
+      cursor: pointer;
+      padding: 15px;
+      border: 1px solid #333333;
+      background: linear-gradient(145deg, #1d1d1d, #222222);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .fellow-item:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(145deg, #222222, #1d1d1d);
+    }
+    .fellow-details h3,
+    .fellow-details h4 {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    .fellow-work-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #66ccff;
+      text-decoration: underline;
+      font-size: 0.9em;
+    }
+    .fellow-bio {
+      display: none;
+      margin-top: 10px;
+      color: #dddddd;
+      border-top: 1px solid #333333;
+      padding-top: 10px;
+      font-size: 0.9em;
+    }
+    .fellow-item.open .fellow-bio {
+      display: block;
+    }
+    /* Projects Section */
+    .projects-section {
+      padding: 60px;
+      background-color: #1a1a1a;
+      text-align: center;
+    }
+    .projects-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #f1f1f1;
+    }
+    /* Projects Grid Layout */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background-color: #222222;
+      border: 1px solid #444444;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .project-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.4em;
+      color: #66ccff;
+    }
+    .project-card p {
+      margin-bottom: 10px;
+      font-size: 0.95em;
+    }
+    .project-card a {
+      color: #66ccff;
+      text-decoration: underline;
+      font-size: 0.9em;
+    }
+    /* Blog Section */
+    .blog-section {
+      padding: 60px;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      text-align: center;
+    }
+    .blog-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #f1f1f1;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .blog-post {
+      background-color: #222222;
+      border: 1px solid #444444;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .blog-post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ffffff;
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+    .read-more:hover {
+      color: #cccccc;
+    }
+    /* Donations Section */
+    .donations-section {
+      padding: 60px;
+      background-color: #121212;
+      color: #ffffff;
+      text-align: center;
+    }
+    .donate-button {
+      display: inline-block;
+      background-color: #222222;
+      color: #000000;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .donate-button:hover {
+      background-color: #ff6347;
+    }
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111111;
+      color: #ffffff;
+      position: relative;
+    }
+    .footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 80%;
+      height: 100%;
+      background: url("path-to-your-geometric-pattern.png") center/cover;
+      opacity: 0.05;
+      transform: translateX(-50%);
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about-section,
+      .fellows-section,
+      .projects-section {
+        padding: 40px 15px;
+      }
+      .about-section h2,
+      .fellows-section h2,
+      .projects-section h2 {
+        font-size: 2rem;
+      }
+      .core-values ul li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <video class="background-video" autoplay loop muted playsinline>
+      <source src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/vid3.mp4?v=1731389538838" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <img src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/Temp%20Pi%20LOGO%20STROKE.png?v=1731377899447" alt="Temporary Institute Logo" class="logo" />
+      <p></p>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#fellows">Fellows</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">News</a></li>
+    </ul>
+  </nav>
+
+  <!-- Introductory Blurb -->
+  <section class="intro-blurb">
+    <p>
+      Our fellows are the vanguard of innovation.
+      Their groundbreaking accomplishments include award-winning art installations, transformative scientific research, and pioneering projects that have reshaped entire fields.
+      Recognized by top international institutions and celebrated in prestigious media, these visionary leaders merge creative genius with rigorous inquiry,
+      setting global standards for art and science collaborations.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About</h2>
+    <p class="mission">
+      Our mission is a journey for the open mind, promoting deep interactions across a Vitruvian array of disciplines—embracing art, science, mathematics, and engineering.
+    </p>
+    <div class="core-values">
+      <h3>Our Core Values:</h3>
+      <ul>
+        <li>Facilitating a community of visionary research fellows.</li>
+        <li>Documenting and disseminating groundbreaking developments.</li>
+        <li>Facilitating Art and Science Collaborations.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Fellows Section -->
+  <section id="fellows" class="fellows-section">
+    <h2>Fellows</h2>
+    <p class="intro">
+      Our fellows are passionate individuals whose creative journeys merge art, science, and technology. Click a profile to reveal more details.
+    </p>
+    <div class="fellows-grid">
+      <!-- NEW Fellow 1: Joe Davis (placed first) -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Joe Davis</h3>
+          <div class="fellow-bio">
+            <p>
+              Joe Davis is a research affiliate in the Department of Biology at MIT, and in the George Church Laboratory at Harvard Medical School. His research and art includes work in the fields of BioArt,space art, and sculpture. Davis' teaching positions have been at MIT, the Rhode Island School of Design (RISD), and the University of Kentucky.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Joe_Davis_(artist)" target="_blank" class="fellow-work-link">View Joe Davis's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fellow 2: Kris Pilcher -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Kris Pilcher</h3>
+          <div class="fellow-bio">
+            <p>
+              Kris Pilcher is a forward-thinking VR/AR/AI specialist serving as a Research Affiliate at MIT and Artist-in-Residence at Georgia State University.
+            </p>
+            <a href="https://krispilcher.com" target="_blank" class="fellow-work-link">View Kris's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fellow 3: Nick (Nicholas David Kaufmann) -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Nick Kaufmann</h3>
+          <div class="fellow-bio">
+            <p>
+              Nick Kaufmann is a dynamic innovator in urban design and immersive media, reimagining urban spaces as an XR Cities Generalist and Community Manager at inCitu.
+            </p>
+            <a href="https://nickkaufmann.com" target="_blank" class="fellow-work-link">View Nick's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fellow 4: Jonathan Goldman (Jon) -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Jon Goldman</h3>
+          <div class="fellow-bio">
+            <p>
+             Jon Goldman is a multidisciplinary artist known for his large-scale inflatable sculptures, interactive installations, and digital painting.
+            </p>
+            <a href="https://goldmanarts.com" target="_blank" class="fellow-work-link">View Jon's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fellow 5: Jeremy Van Cleve -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Jeremy Van Cleve</h3>
+          <div class="fellow-bio">
+            <p>
+              Jeremy Van Cleve is an Associate Professor at the University of Kentucky whose work in theoretical evolutionary biology offers unique insights into social processes.
+            </p>
+            <a href="https://jeremyvancleve.com" target="_blank" class="fellow-work-link">View Jeremy's Work</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Fellow 7: George Church -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>George Church</h3>
+          <div class="fellow-bio">
+            <p>
+              George Church is a pioneering geneticist with a career spanning Harvard, MIT, and the Wyss Institute, whose groundbreaking work has reshaped biotechnology.
+            </p>
+            <a href="https://churchlab.harvard.edu" target="_blank" class="fellow-work-link">View George's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fellow 8: Sarah Khan (Sarah Farooq Khan) -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Carah Khan</h3>
+          <div class="fellow-bio">
+            <p>
+              Carah Khan is a visionary wetware engineer at Averos Lifesciences, developing bacterial sensors and living prototypes that fuse art with scientific innovation.
+            </p>
+            <a href="https://averoslifesciences.com" target="_blank" class="fellow-work-link">View Sarah's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fellow 9: Rich Pell -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Rich Pell</h3>
+          <div class="fellow-bio">
+            <p>
+              Rich Pell is the founder of the Center for PostNatural History and an Associate Professor at Carnegie Mellon University, interweaving art, science, and historical inquiry.
+            </p>
+            <a href="https://postnaturalhistory.org" target="_blank" class="fellow-work-link">View Rich's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fellow 10: Guenter Seyfried -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Guenter Seyfried</h3>
+          <div class="fellow-bio">
+            <p>
+              With a background in medicine and psychology, Guenter merges scientific insight with digital art and teaches art theory at New Design University St. Pölten.
+            </p>
+            <a href="" target="_blank" class="fellow-work-link">View Guenter's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fellow 11: Gabe Niconchuk -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Gabe Niconchuk</h3>
+          <div class="fellow-bio">
+            <p>
+              Gabe is an interdisciplinary artist whose projects merge neuroscience, graphic design, and performance.
+            </p>
+            <a href="https://gabeniconchuk.com" target="_blank" class="fellow-work-link">View Gabe's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fellow 12: Esen Küçüktütüncü (Esen K. Tütüncü) -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Esen Küçüktütüncü</h3>
+          <div class="fellow-bio">
+            <p>
+              Esen is a creative coder and transdisciplinary artist whose XR projects explore agency and perception. She is pursuing a PhD in Clinical Psychology and Virtual Reality.
+            </p>
+            <a href="https://esenka.substack.com/" target="_blank" class="fellow-work-link">View Esen's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fellow 13: Alan Stearns -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Alan Stearns</h3>
+          <div class="fellow-bio">
+            <p>
+              Alan is a dedicated psychiatrist practicing in New York, with training from Tufts, MIT Sloan, and BU School of Medicine.
+            </p>
+            <a href="" target="_blank" class="fellow-work-link">View Alan's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fellow 14: Dr Andreas Mershin (Andreas) -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h3>Andreas Mershin</h3>
+          <div class="fellow-bio">
+            <p>
+              Dr. Mershin is a visionary scientist at realnose.ai and MIT, specializing in quantum biophysics, machine olfaction, and mycotecture.
+            </p>
+            <a href="https://www.mershin.org" target="_blank" class="fellow-work-link">View Andreas's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Additional Fellows Heading -->
+      <h3 style="grid-column: 1 / -1; text-align: center; margin-top: 40px;">Additional Fellows</h3>
+      <!-- Minimal Fellow: Eric Begleiter -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Eric Begleiter</h4>
+          <div class="fellow-bio">
+            <p>
+              Eric is a holographer and spatial imaging specialist exploring the intersection of AI and imaging.
+            </p>
+            <a href="https://ericbegleiter.com" target="_blank" class="fellow-work-link">View Eric's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Carah Khan -->
+      <!-- Minimal Fellow: Dana DalBo -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Dana DalBo</h4>
+          <div class="fellow-bio">
+            <p>
+              Dana is a PhD candidate in New Media at USC and founder of DAIN and the Degenious Foundation.
+            </p>
+            <a href="https://degenius.org/" target="_blank" class="fellow-work-link">View Dana's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Anton Gopka -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Anton Gopka</h4>
+          <div class="fellow-bio">
+            <p>
+              Anton is a former dean from ITMO University now applying his expertise in investments and finance to interdisciplinary projects.
+            </p>
+            <a href="" target="_blank" class="fellow-work-link">View Anton's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Peggy Yue Yin -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Peggy Yue Yin</h4>
+          <div class="fellow-bio">
+            <p>
+              Peggy is an artist and Harvard neuroscience researcher exploring the connections between art and the brain.
+            </p>
+            <a href="https://confluxcollective.org/" target="_blank" class="fellow-work-link">View Peggy's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Saad Khan -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Saad Khan</h4>
+          <div class="fellow-bio">
+            <p>
+              Saad is a co-creator, VC investor, and Grammy-winning producer who infuses his projects with passion and innovation.
+            </p>
+            <a href="" target="_blank" class="fellow-work-link">View Saad's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Artem Burdanov -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Artem Burdanov</h4>
+          <div class="fellow-bio">
+            <p>
+              Artem is a research scientist at MIT with expertise in astrophysics and astronomy.
+            </p>
+            <a href="https://www.disruptiveplanets.mit.edu/artemburdanov" target="_blank" class="fellow-work-link">View Artem's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Curtis A. Lockshin -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Curtis A. Lockshin</h4>
+          <div class="fellow-bio">
+            <p>
+              Curtis is a biotech specialist and self-described "involuntary artist" who explores the creative side of science.
+            </p>
+            <a href="" target="_blank" class="fellow-work-link">View Curtis's Work</a>
+          </div>
+        </div>
+      </div>
+       <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Diana Kenney</h4>
+          <div class="fellow-bio">
+            <p>
+              Diana is a science writer at Marine Biological Lab and an accomplished choreographer, dancer, and performance artist.
+            </p>
+            <a href="" target="_blank" class="fellow-work-link">View Diana's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Dana Boyd -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Dana Boyd</h4>
+          <div class="fellow-bio">
+            <p>
+              Dana is a corresponding member of Harvard Medical School’s Department of Microbiology.
+            </p>
+            <a href="" target="_blank" class="fellow-work-link">View Dana Boyd's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Eugen Ermantraut -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Eugen Ermantraut</h4>
+          <div class="fellow-bio">
+            <p>
+              Eugen is a biotech specialist whose work embodies his passion for innovative scientific collaborations.
+            </p>
+            <a href="" target="_blank" class="fellow-work-link">View Eugen's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Yassir Chadley -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Yassir Chadley</h4>
+          <div class="fellow-bio">
+            <p>
+              Yassir is a Sufi master whose spiritual insights inspire his creative endeavors.
+            </p>
+            <a href="https://www.kqed.org/arts/129153/how_yassir_chadly_came_to_terms_with_music_and_islam" target="_blank" class="fellow-work-link">View Yassir's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Thomas Kaiser -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Thomas Kaiser</h4>
+          <div class="fellow-bio">
+            <p>
+              Thomas is an engineer passionate about building innovative solutions that integrate art and technology.
+            </p>
+            <a href="" target="_blank" class="fellow-work-link">View Thomas's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Jon Ippolito -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Jon Ippolito</h4>
+          <div class="fellow-bio">
+            <p>
+              Jon is a professor of New Media at the University of Maine with a keen eye for digital curation and creative storytelling.
+            </p>
+            <a href="https://jonippolito.com" target="_blank" class="fellow-work-link">View Jon Ippolito's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Matt Thomas -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Matt Thomas</h4>
+          <div class="fellow-bio">
+            <p>
+              Matt is an engineer whose practical expertise and creative vision merge to produce innovative solutions.
+            </p>
+            <a href="" target="_blank" class="fellow-work-link">View Matt's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Peter Sasowsky -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Peter Sasowsky</h4>
+          <div class="fellow-bio">
+            <p>
+              Peter is a filmmaker with a passion for storytelling that transcends conventional media.
+            </p>
+            <a href="hhttps://www.seriousmotionpictures.com/" target="_blank" class="fellow-work-link">View Peter's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Ira Sasowsky -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Ira Sasowsky</h4>
+          <div class="fellow-bio">
+            <p>
+              Ira is a geologist who brings the wonders of the natural world to life through his creative endeavors.
+            </p>
+            <a href="https://www.uakron.edu/geology/faculty-staff/idsresume.pdf" target="_blank" class="fellow-work-link">View Ira's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Ildar Lukyabov -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Ildar Lukyabov</h4>
+          <div class="fellow-bio">
+            <p>
+              Ildar is a spatial imaging specialist whose work captures the unseen dimensions of our world.
+            </p>
+            <a href="https://www.instagram.com/videoildar/?hl=enhttps://example.com/ildar-work" target="_blank" class="fellow-work-link">View Ildar's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Karyn Nakamura -->
+
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Frederik Van de Meer</h4>
+          <div class="fellow-bio">
+            <p>
+              Frederik is an expert in forging collaborations between science and art, creating work that inspires and challenges.
+            </p>
+            <a href="" target="_blank" class="fellow-work-link">View Frederik's Work</a>
+          </div>
+        </div>
+      </div>
+      <!-- Minimal Fellow: Dimitrios Ioannidis -->
+      <div class="fellow-item" onclick="toggleFellow(this)">
+        <div class="fellow-details">
+          <h4>Dimitrios Ioannidis</h4>
+          <div class="fellow-bio">
+            <p>
+              Dimitrios serves as general counsel, offering invaluable guidance that underpins the institute’s creative and research endeavors.
+            </p>
+            <a href="https://www.rimlawyers.com/attorneys/ioannidis/" target="_blank" class="fellow-work-link">View Dimitrios's Work</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="projects-section">
+  <h2>Our Projects</h2>
+  <div class="projects-grid">
+    
+    <!-- Project Card 1: Exospot -->
+    <div class="project-card">
+      <h3>Reclamation Space</h3>
+      <p><strong>Year:</strong> Current</p>
+      <p>An exploration of using Space Junk as a coronagraph for finding exoplanets</p>
+      <p><strong>Created by:</strong> Joe Davis, Kris Pilcher, Artem Burdanov</p>
+      <a href="/reclamation-space.html" target="_blank">Learn More</a>
+    </div>
+
+    <!-- Project Card 2: Lucky Mice -->
+    <div class="project-card">
+      <h3>Lucky Mice</h3>
+      <p><strong>Year:</strong> 2025</p>
+      <p>Is there a gene for luck?</p>
+      <p><strong>Created by:</strong> Ashley Seifert, Ezra Kruzich, Joe Davis</p>
+      <a href="#" target="_blank">Learn More</a>
+    </div>
+
+    <!-- Project Card 3: Landscape Painting -->
+    <div class="project-card">
+      <h3>Landscape Painting</h3>
+      <p><strong>Year:</strong> 2022, ongoing</p>
+      <p>Nonlinear encoding of natural materials dispersed by biplane.</p>
+      <p><strong>Created by:</strong> Joe Davis</p>
+      <a href="#">Download PDF</a>
+    </div>
+
+    <!-- Project Card 4: Coming Soon -->
+    <div class="project-card">
+      <h3>Church with No Windows and No Doors</h3>
+      <p><strong>Year:</strong> 2025, ongoing</p>
+      <p>There is secret knowledge inside</p>
+      <p><strong>Created by: </strong>Joe Davis</p>
+      <a href="#" target="_blank">Learn More</a>
+    </div>
+    
+      <div class="project-card">
+      <h3>High Density DNA Manifold Encoding</h3>
+      <p><strong>Year:</strong> 2025, ongoing</p>
+      <p>A process for using Arithmetic Encoding and DNA Manifolds to achieve near Shannon Limit Information Encoding in DNA</p>
+      <p><strong>Created by: </strong>Joe Davis</p>
+      <a href="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/HIGH%20DENSITY%20DNA%20MANIFOLDS%20WITH%20ARITHMETIC%20CODING.pdf?v=1746658134507" download>Download PDF</a>
+    </div>
+
+  </div> <!-- .projects-grid -->
+</section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section">
+    <h2>Temporary News</h2>
+    <p>Explore the latest insights and stories from our fellows and projects:</p>
+    <div class="blog-grid">
+     <!-- Blog Post: The Unification of Knowledge -->
+
+<div class="blog-post">
+
+    <!-- Title and Meta Info -->
+    <p>UNIFICATION OF KNOWLEDGE</p>
+    <p>Joe Davis</p>
+    <p>Cambridge, MA</p>
+    <p>May 2018</p>
+
+    <!-- Paragraph 1 -->
+    <p>
+        Marcus Vitruvius Pollio, namesake of Leonardo Da Vinci’s Vitruvian Man, was a Roman
+        polymath who lived in the world of Caesar Augustus. His great work, De Architectura
+        was lost in antiquity, but resurfaced in the Italian Renaissance. The first illustrated
+        version was republished in 1511. In the first chapter, Vitruvius wrote that artists and
+        architects should have knowledge based in both practice and theory. The Vitruvian
+        motto, “Mens et Manus” appears on the MIT seal, likewise suggesting that craft must be
+        accompanied by rigorous scholarship.
+    </p>
+
+    <!-- Paragraph 2 -->
+    <p>
+        In the first century BCE, Vitruvius wrote that artists must both be creative and have the
+        ability to listen, to learn new things, and that an artist deficient in either of these
+        qualities could never become a master of his practice. Vitruvius went on to outline a list
+        of things he thought that an artist should know:
+    </p>
+
+    <!-- Blockquote 1 -->
+    <blockquote>
+        “He should be a good writer, a skillful draftsman, versed in
+        geometry and optics, expert at figures, acquainted with history,
+        informed on the principles of natural and moral philosophy,
+        somewhat of a musician, not ignorant of the sciences both of law
+        and physic, nor of the motions, laws, and relations to each other,
+        of the heavenly bodies... Since, therefore, this art is founded upon
+        and adorned with so many different sciences, I am of opinion that
+        those who have not, from their early youth, gradually climbed up
+        to the summit, cannot, without presumption, call themselves
+        masters of it.”
+    </blockquote>
+
+    <!-- Paragraph 3 -->
+    <p>
+        (Marcus Vitruvius Pollio: de Architectura, Book I, Chapter 1)
+    </p>
+
+    <!-- Paragraph 4 -->
+    <p>
+        Vitruvius advised that artists should know something about the science of medicine and
+        the motions and proportions of the human body, a conviction that inspired Da Vinci
+        more that 1,500 years later. While he remains largely unknown to modern readers,
+        Vitruvius is known to have influenced the multi-talented Renaissance figures presented
+        to us as schoolchildren. We were told that these people were the flowers of the human
+        intellect and led to believe that this is what we may all become.
+    </p>
+
+    <!-- Paragraph 5 -->
+    <p>
+        Yet over time, secular structures embedded in higher education and business would
+        ultimately sweep away this Renaissance ideal. The dream of Renaissance would come to
+        be replaced with the idea that the arts and sciences have become far too specialized
+        and complicated and that in our own era, no individual can make significant
+        contributions to multiple fields.
+    </p>
+
+    <!-- Paragraph 7 -->
+    <p>
+        Somehow, more than two thousand years ago, Vitruvius seems to have anticipated this
+        reaction. He wrote that since everything is connected to everything else, all that is
+        needed is natural curiosity and an ability to pay attention:
+    </p>
+
+    <!-- Blockquote 2 -->
+    <blockquote>
+        “Perhaps, to the uninformed, it may appear unaccountable that a
+        man should be able to retain in his memory such a variety of
+        learning; but the close alliance with each other, of the different
+        branches of science, will explain the difficulty. For as a body is
+        composed of various concordant members, so does the whole
+        circle of learning consist in one harmonious system. Wherefore
+        those, who from an early age are initiated in the different
+        branches of learning, have a facility in acquiring some knowledge
+        of all, from their common connection with each other.”
+    </blockquote>
+
+
+    <!-- Paragraph 9 -->
+    <p>
+        What is the common thread in this heterogeneous opus? Vitruvius seems to think that
+        unity of knowledge is in fact, intrinsic: that everything already exists as a kind of
+        synchronized whole, and it is only the way we link things together that newly transform
+        them into opportunity and innovation.
+    </p>
+
+    <!-- Paragraph 10 -->
+    <p>
+        Yet in our own time, artists are not given to understand physics or chemistry, law,
+        philosophy, medicine, or astronomy. The deep connections of art and mathematics are
+        all but forgotten and in many cases, even music and history have been dropped from
+        the list. While we continue to call upon artists to describe the whole world, whatever
+        artists choose to remain clueless about simply cannot be described.
+    </p>
+
+    <!-- Paragraph 11 -->
+    <p>
+        Until relatively recently, technological advancement seems to have come hand-in-hand
+        with the grand fragmentation of knowledge into arbitrarily concise subjects and
+        specialized categories. Scholars of the humanities now acknowledge that the separation
+        of arts and sciences was an artificial one perpetuated by centuries of history that turned
+        metaphysics into the foundation of all things artistic. The machinery of this historical
+        artificiality and its categories can be traced to 18th century Romanticism, an artifact of
+        the “Counter-Enlightenment” that has now assumed a kind of de facto reality.
+    </p>
+
+    <!-- Paragraph 12 -->
+    <p>
+        Times have changed in ways that could not have been foreseen by Marcus Vitruvius
+        Polio. In the majority of cultural contexts, artistic thought and practice have been
+        relegated to the fringes of society as frivolous, trivial or ornamental where art is most
+        often thought of as a means to decorate rather than to innovate. But, these notions call
+        for some pretense or disregard of history. Students of art in our own era generally have
+        no idea that this is a constructed separation of art and science and that artists
+        contributed to the invention of mathematics, astronomy, chemistry, physics and biology.
+        The idea that great advances in art and science can be part of the same pursuit has
+        become increasingly difficult to reconcile.
+    </p>
+
+
+
+    <!-- Paragraph 14 -->
+    <p>
+        There is a surviving impression that artists have unique abilities to draw together ideas
+        from all quarters to represent our collective dreams and aspirations. Art is still expected
+        to summon the human spirit. We depend on artists to predict the future and to answer
+        deep and profound questions about the mysteries of life. Artists are still expected to
+        interpret the world for us.
+    </p>
+
+    <!-- Paragraph 15 -->
+    <p>
+        It is no secret that in the modern world, artists are mostly unemployed. Yet, it would be
+        a grave mistake to extrapolate from the privileged and insular art markets of say,
+        London or New York to gauge potential impacts that the arts can have on society at
+        large. Just as in many cases, the dry, empirical operations of scientific research might
+        lead us to believe that they cannot become importantly poetic, or aesthetically relevant.
+        The scientific search for extraterrestrial intelligence, interpretation of dreams in
+        Freudian psychoanalysis and mind-bending aspects of quantum physics might be
+        counted as several contrary examples.
+    </p>
+
+    <!-- Paragraph 16 -->
+    <p>
+        So, what kind of background do artists need now to make significant contributions to
+        society? Artists still require broad knowledge.
+    </p>
+
+    <!-- Paragraph 17 -->
+    <p>
+        Ideas about the grand synthesis of knowledge inspired the first universities and centers
+        of learning in medieval Europe and in medieval China and Japan and likewise, the
+        founding of the Royal Societies and great academies of the European “Enlightenment,”
+        the so-called, “Age of Reason.” These same aspirations have resonated with every
+        historic movement of mind, every intellectual elite, every perestroika of the exact
+        sciences and the liberal arts. In fact, the idea that artists have special abilities to reach
+        out across domains may stand as evidence that some kind of unification among them all
+        already exists.
+    </p>
+
+    <!-- Paragraph 18 -->
+    <p>
+        Artists don’t have to devote themselves entirely to science and technology, but the
+        mandate of Romanticism to disregard all rules but your own has become untenable as
+        well. Perhaps “Renaissance” is inevitable whenever civilization reaches a point where
+        legacies of war and brutal religious intolerance have been overturned and people find
+        time for scholarship and access to sufficient concentrations of knowledge. Perhaps
+        pursuit of the great unification of knowledge has always been an intrinsic part of human
+        nature.
+    </p>
+
+    <!-- Paragraph 19 -->
+    <p>
+        Many prerequisite elements are already in place. Dizzying findings in physics and biology
+        have exponentially expanded the landscape onto which humanity can project its
+        activities. Breathtaking profusions of knowledge are now bursting into existence with
+        the potential to accelerate worldwide intellectual, social, scientific and technological
+        development. We have the cognitive apparatus and we have the technological means.
+    </p>
+
+    <!-- Paragraph 20 -->
+    <p>
+        So, what’s missing?
+    </p>
+
+
+
+    <!-- Paragraph 22 -->
+    <p>
+        The culture we reside in must have the capacity to sustain Renaissance. Now, just as in
+        the Italian Quattrocento, social and institutional structures cannot cope with the
+        consequences of such sweeping changes. In many cases, powerful religious communities
+        and conservative political forces control or completely block universal access to
+        education and to comprehensive education in many of the sciences. In some of the most
+        technologically advanced societies universal education is available only in principle to
+        individuals of low or moderate income. Even if they are admitted into the classroom or
+        laboratory, it is unlikely they will be able to afford the large financial investment that
+        attending a university will increasingly require.
+    </p>
+
+    <!-- Paragraph 23 -->
+    <p>
+        Previous generations have left us with a deteriorating environment, destabilized
+        international political situations, stumbling top-heavy economies, and dwindling public
+        support for science, art, the humanities and many social services, including education.
+        As universities turn to sources of private support, many have converted their
+        endowments to become fully diversified international super-corporations with
+        operations and capital investments that reach far beyond traditional mandates to carry
+        on scholarship and research. Businesses work toward profits and university
+        administrators fail to reconcile those interests with the primary mission of creating new
+        knowledge. Relationships of sponsored research with unrestricted enterprise and
+        entrepreneurship are flawed at the expense of innovation and creativity.
+    </p>
+
+    <!-- Paragraph 24 -->
+    <p>
+        Advancement of knowledge is all too often subsidiary to technology licensing, profits,
+        market strategies and military and political initiatives. The ways in which research
+        enterprises are supported restrict the nature of scientific investigation, determine the
+        nature of projects undertaken and the realm of possibilities that will be considered for
+        future research. Problems that cannot be solved profitably are likely to be ignored. In
+        Star Trek lingo, we have compromised our university systems with something like
+        “Ferengi economics” and “Rules of Acquisition.”
+    </p>
+
+    <!-- Paragraph 25 -->
+    <p>
+        Tragically, no society has ever been more technologically advanced and yet the average
+        person has never been more indifferent to technological developments and scientific
+        principles that make “quality of life” possible. If the Romantic era saw the humanities
+        disengaging from the sciences, the Modern era all but erased hope for the reunion of
+        science and art.
+    </p>
+
+    <!-- Paragraph 26 -->
+    <p>
+        But signs of change are appearing. In the past decade, many scientific laboratories and
+        whole fields of research have become increasingly interdisciplinary. International
+        conferences and conclaves resonate with these changes and new university programs
+        have been established to coordinate these developments. So far, such initiatives do not
+        formally integrate art and science, but these disciplines too are quietly disengaging from
+        their historic separation.
+    </p>
+
+    <!-- Paragraph 27 -->
+    <p>
+        Keeping in mind that Vitruvius wrote down his artistic curriculum in the first century BCE,
+        it seems obvious that he might now feel the need to update his list of prerequisites for
+    </p>
+
+
+    <!-- Paragraph 29 -->
+    <p>
+        artists in the 21rst century. Art can have little relevance or immediacy unless it is
+        constantly rebuilt with increasingly sophisticated sets of actions, forms, and symbols.
+        There are absolutely no reasons why artistic practice should not be just as precise and
+        just as rigorous as the practice of physics, chemistry, philosophy or mathematics. More
+        than ever before, the future of innovation in both art and science depends on fluency in
+        multiple fields and strong, multidisciplinary mindsets.
+    </p>
+
+    <!-- Paragraph 30 -->
+    <p>
+        Some artists may be too impatient to wait for art to fully recover its former scope and
+        instead opt to explore a role that still remains unknown to us: neither as an artist nor as
+        a scientist, but rather as an artist-scientist, both free enough to tackle absurd questions
+        and disciplined enough to be scientifically rigorous about the way the work is carried out.
+        There is a chance, where it is possible to both dream and act, that the centuries of
+        opposition between art and science can finally be resolved.
+    </p>
+
+
+</div>
+
+    </div>
+  </section>
+
+  <!-- Donations Section -->
+  <section id="donations" class="donations-section">
+    <h2>Support Our Mission</h2>
+    <p>Our project thrives on institutional and individual support.</p>
+    <p>We offer consulting, maintain intellectual property rights, and collect royalties from innovations and publications to fuel the institute's ongoing growth and impact.</p>
+    <p>Your generous support helps us foster collaboration and advance knowledge in art and science.</p>
+    <a href="https://givebutter.com/TemporaryInstitute" class="cta-button">Donate Now</a>
+    <p></p>
+     
+  </section>
+
+ <section id="donations" class="donations-section">
+  
+     <p>Access our advanced AI for Members Only</p>
+    <a href="https://Ai-joe.glitch.me" class="cta-button">AI</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    
+    <p>© 2024 Temporary Institute for Unification of Knowledge, inc</p>
+    <p>A Massachusetts 501(c)(3) organization</p>
+    <p><a href="bylaws.pdf" target="_blank">View our Bylaws</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Wait for the page to fully load
+    window.addEventListener("load", function () {
+      document.body.classList.add("page-loaded");
+    });
+   
+    // Toggle function to show/hide fellow details
+    function toggleFellow(element) {
+      element.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

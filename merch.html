@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Merch – Temporary Institute</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    .merch-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .merch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .merch-item {
+      background-color: #111;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .merch-item:hover {
+      transform: scale(1.03);
+    }
+
+    .merch-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .merch-item h3 {
+      margin: 10px 0;
+      color: #66ccff;
+    }
+
+    .merch-item p {
+      color: #ccc;
+      font-size: 0.95em;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #66ccff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <img src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/Temp%20Pi%20LOGO%20STROKE.png?v=1731377899447" alt="Temporary Institute Logo" class="logo" />
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#fellows">Fellows</a></li>
+      <li><a href="/#projects">Projects</a></li>
+      <li><a href="/#blog">News</a></li>
+      <li><a href="/merch.html">Merch</a></li>
+    </ul>
+  </nav>
+
+  <!-- Merch Section -->
+  <section class="merch-section" data-aos="fade-up">
+    <h2>Official Merch</h2>
+    <p>Support the Temporary Institute by repping our gear — ethically sourced, high quality, and made for thinkers.</p>
+
+    <div class="merch-grid">
+      <div class="merch-item" data-aos="zoom-in">
+        <img src="https://cdn.glitch.global/yourpath/hoodie.jpg" alt="Hoodie"/>
+        <h3>TI Logo Hoodie</h3>
+        <p>Soft and bold. Features the Temporary Institute emblem on chest. Available in black, tan, and safety yellow.</p>
+        <a href="#" class="cta-button">Buy Now</a>
+      </div>
+      <div class="merch-item" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://cdn.glitch.global/yourpath/tshirt.jpg" alt="T-Shirt"/>
+        <h3>TI T-Shirt</h3>
+        <p>Crisp white with center-aligned logo. Lightweight, unisex cut for everyday wear.</p>
+        <a href="#" class="cta-button">Buy Now</a>
+      </div>
+      <div class="merch-item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://cdn.glitch.global/yourpath/hat.jpg" alt="Hat"/>
+        <h3>Logo Cap</h3>
+        <p>Classic structured cap with embroidered insignia. Perfect for fieldwork or rooftop thinking.</p>
+        <a href="#" class="cta-button">Buy Now</a>
+      </div>
+      <div class="merch-item" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://cdn.glitch.global/yourpath/mug.jpg" alt="Coffee Mug"/>
+        <h3>Institute Mug</h3>
+        <p>White ceramic mug featuring the logo. Best served with cosmic ambition and late-night writing.</p>
+        <a href="#" class="cta-button">Buy Now</a>
+      </div>
+      <div class="merch-item" data-aos="zoom-in" data-aos-delay="400">
+        <img src="https://cdn.glitch.global/yourpath/labcoat.jpg" alt="Labcoat Hoodie"/>
+        <h3>Hoodie Labcoat</h3>
+        <p>Coming Soon. For field researchers, metaphysicians, and speculative engineers. Soft, structured, iconic.</p>
+        <a href="#" class="cta-button">Notify Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Temporary Institute for Unification of Knowledge</p>
+    <p>A Massachusetts 501(c)(3) organization</p>
+    <p><a href="bylaws.pdf" target="_blank">View our Bylaws</a></p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+</body>
+</html>
