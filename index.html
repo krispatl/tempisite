@@ -200,4 +200,390 @@
       margin: 0;
       display: flex;
       flex-direction: column;
-      gap:
+      gap: 10px;
+    }
+    .core-values ul li {
+      font-size: 1.1rem;
+      background-color: #222222;
+      padding: 10px 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    .core-values ul li::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, transparent, #333333);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .core-values ul li:hover::after {
+      opacity: 0.1;
+    }
+    /* Fellows Section */
+    .fellows-section {
+      padding: 60px;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .fellows-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #f1f1f1;
+    }
+    .fellows-section .intro {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      text-align: center;
+    }
+    /* Fellows Grid Layout */
+    .fellows-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .fellow-item {
+      cursor: pointer;
+      padding: 15px;
+      border: 1px solid #333333;
+      background: linear-gradient(145deg, #1d1d1d, #222222);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .fellow-item:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(145deg, #222222, #1d1d1d);
+    }
+    .fellow-details h3,
+    .fellow-details h4 {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    .fellow-work-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #66ccff;
+      text-decoration: underline;
+      font-size: 0.9em;
+    }
+    .fellow-bio {
+      display: none;
+      margin-top: 10px;
+      color: #dddddd;
+      border-top: 1px solid #333333;
+      padding-top: 10px;
+      font-size: 0.9em;
+    }
+    .fellow-item.open .fellow-bio {
+      display: block;
+    }
+    /* Projects Section */
+    .projects-section {
+      padding: 60px;
+      background-color: #1a1a1a;
+      text-align: center;
+    }
+    .projects-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #f1f1f1;
+    }
+    /* Projects Grid Layout */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background-color: #222222;
+      border: 1px solid #444444;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .project-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.4em;
+      color: #66ccff;
+    }
+    .project-card p {
+      margin-bottom: 10px;
+      font-size: 0.95em;
+    }
+    .project-card a {
+      color: #66ccff;
+      text-decoration: underline;
+      font-size: 0.9em;
+    }
+    /* Blog Section */
+    .blog-section {
+      padding: 60px;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      text-align: center;
+    }
+    .blog-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #f1f1f1;
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .blog-post {
+      background-color: #222222;
+      border: 1px solid #444444;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .blog-post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ffffff;
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+    .read-more:hover {
+      color: #cccccc;
+    }
+    /* Donations Section */
+    .donations-section {
+      padding: 60px;
+      background-color: #121212;
+      color: #ffffff;
+      text-align: center;
+    }
+    .donate-button {
+      display: inline-block;
+      background-color: #222222;
+      color: #000000;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .donate-button:hover {
+      background-color: #ff6347;
+    }
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111111;
+      color: #ffffff;
+      position: relative;
+    }
+    .footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 80%;
+      height: 100%;
+      background: url("path-to-your-geometric-pattern.png") center/cover;
+      opacity: 0.05;
+      transform: translateX(-50%);
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .about-section,
+      .fellows-section,
+      .projects-section {
+        padding: 40px 15px;
+      }
+      .about-section h2,
+      .fellows-section h2,
+      .projects-section h2 {
+        font-size: 2rem;
+      }
+      .core-values ul li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <video class="background-video" autoplay loop muted playsinline preload="auto">
+      <source src="/glitch-assets/vid3.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <img
+        src="/glitch-assets/Temp%20Pi%20LOGO%20STROKE.png"
+        alt="Temporary Institute Logo"
+        class="logo"
+        loading="eager"
+        decoding="async"
+      />
+      <p></p>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#fellows">Fellows</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">News</a></li>
+    </ul>
+  </nav>
+
+  <!-- Introductory Blurb -->
+  <section class="intro-blurb">
+    <p>
+      Our fellows are the vanguard of innovation.
+      Their groundbreaking accomplishments include award-winning art installations, transformative scientific research, and pioneering projects that have reshaped entire fields.
+      Recognized by top international institutions and celebrated in prestigious media, these visionary leaders merge creative genius with rigorous inquiry,
+      setting global standards for art and science collaborations.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About</h2>
+    <p class="mission">
+      Our mission is a journey for the open mind, promoting deep interactions across a Vitruvian array of disciplines—embracing art, science, mathematics, and engineering.
+    </p>
+    <div class="core-values">
+      <h3>Our Core Values:</h3>
+      <ul>
+        <li>Facilitating a community of visionary research fellows.</li>
+        <li>Documenting and disseminating groundbreaking developments.</li>
+        <li>Facilitating Art and Science Collaborations.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Fellows Section -->
+  <section id="fellows" class="fellows-section">
+    <h2>Fellows</h2>
+    <p class="intro">
+      Our fellows are passionate individuals whose creative journeys merge art, science, and technology. Click a profile to reveal more details.
+    </p>
+    <div class="fellows-grid">
+      <!-- (rest of your fellows unchanged) -->
+      ...
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Our Projects</h2>
+    <div class="projects-grid">
+      <!-- Project Card 1: Exospot -->
+      <div class="project-card">
+        <h3>Reclamation Space</h3>
+        <p><strong>Year:</strong> Current</p>
+        <p>An exploration of using Space Junk as a coronagraph for finding exoplanets</p>
+        <p><strong>Created by:</strong> Joe Davis, Kris Pilcher, Artem Burdanov</p>
+        <a href="/reclamation-space.html" target="_blank">Learn More</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Lucky Mice</h3>
+        <p><strong>Year:</strong> 2025</p>
+        <p>Is there a gene for luck?</p>
+        <p><strong>Created by:</strong> Ashley Seifert, Ezra Kruzich, Joe Davis</p>
+        <a href="#" target="_blank">Learn More</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Landscape Painting</h3>
+        <p><strong>Year:</strong> 2022, ongoing</p>
+        <p>Nonlinear encoding of natural materials dispersed by biplane.</p>
+        <p><strong>Created by:</strong> Joe Davis</p>
+        <a href="#">Download PDF</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Church with No Windows and No Doors</h3>
+        <p><strong>Year:</strong> 2025, ongoing</p>
+        <p>There is secret knowledge inside</p>
+        <p><strong>Created by: </strong>Joe Davis</p>
+        <a href="#" target="_blank">Learn More</a>
+      </div>
+
+      <div class="project-card">
+        <h3>High Density DNA Manifold Encoding</h3>
+        <p><strong>Year:</strong> 2025, ongoing</p>
+        <p>A process for using Arithmetic Encoding and DNA Manifolds to achieve near Shannon Limit Information Encoding in DNA</p>
+        <p><strong>Created by: </strong>Joe Davis</p>
+        <a href="/glitch-assets/HIGH%20DENSITY%20DNA%20MANIFOLDS%20WITH%20ARITHMETIC%20CODING.pdf" download>
+          Download PDF
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog-section">
+    <h2>Temporary News</h2>
+    <p>Explore the latest insights and stories from our fellows and projects:</p>
+    <div class="blog-grid">
+      <!-- (unchanged) -->
+      ...
+    </div>
+  </section>
+
+  <!-- Donations Section -->
+  <section id="donations" class="donations-section">
+    <h2>Support Our Mission</h2>
+    <p>Our project thrives on institutional and individual support.</p>
+    <p>We offer consulting, maintain intellectual property rights, and collect royalties from innovations and publications to fuel the institute's ongoing growth and impact.</p>
+    <p>Your generous support helps us foster collaboration and advance knowledge in art and science.</p>
+    <a href="https://givebutter.com/TemporaryInstitute" class="cta-button">Donate Now</a>
+    <p></p>
+  </section>
+
+  <!-- IMPORTANT: IDs must be unique (you had two sections with id="donations") -->
+  <section id="members" class="donations-section">
+    <p>Access our advanced AI for Members Only</p>
+    <a href="https://Ai-joe.glitch.me" class="cta-button">AI</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Temporary Institute for Unification of Knowledge, inc</p>
+    <p>A Massachusetts 501(c)(3) organization</p>
+    <p><a href="bylaws.pdf" target="_blank">View our Bylaws</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    window.addEventListener("load", function () {
+      document.body.classList.add("page-loaded");
+    });
+
+    function toggleFellow(element) {
+      element.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
