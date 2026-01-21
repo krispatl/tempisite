@@ -32,7 +32,13 @@
   <!-- Hero Section -->
   <header class="hero-section">
     <div class="hero-content">
-      <img src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/Temp%20Pi%20LOGO%20STROKE.png?v=1731377899447" alt="Temporary Institute Logo" class="logo" />
+      <img
+        src="/glitch-assets/Temp%20Pi%20LOGO%20STROKE.png"
+        alt="Temporary Institute Logo"
+        class="logo"
+        loading="eager"
+        decoding="async"
+      />
     </div>
   </header>
 
@@ -93,15 +99,36 @@
 
     <!-- Images -->
     <div style="margin: 40px auto; max-width: 1000px; display: grid; gap: 20px;">
-      <img data-aos="zoom-in" src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/recbefore.jpeg?v=1743719026686" alt="Before occultation - HD 99865" style="width: 100%; border-radius: 8px;" />
-      <img data-aos="zoom-in" src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/reccduring.jpeg?v=1743719032573" alt="During occultation" style="width: 100%; border-radius: 8px;" />
-      <img data-aos="zoom-in" src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/recafter.jpeg?v=1743719030023" alt="After occultation" style="width: 100%; border-radius: 8px;" />
+      <img
+        data-aos="zoom-in"
+        src="/glitch-assets/recbefore.jpeg"
+        alt="Before occultation - HD 99865"
+        style="width: 100%; border-radius: 8px;"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        data-aos="zoom-in"
+        src="/glitch-assets/reccduring.jpeg"
+        alt="During occultation"
+        style="width: 100%; border-radius: 8px;"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        data-aos="zoom-in"
+        src="/glitch-assets/recafter.jpeg"
+        alt="After occultation"
+        style="width: 100%; border-radius: 8px;"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
 
     <!-- Video -->
     <div data-aos="fade-up" style="text-align: center; margin-top: 30px;">
-      <video controls style="width: 100%; max-width: 800px; border-radius: 8px;">
-        <source src="https://cdn.glitch.global/aef0ccba-6bd8-4c5c-842e-2fb4cccd7854/recvid.mp4?v=1743719905354" type="video/mp4" />
+      <video controls preload="metadata" style="width: 100%; max-width: 800px; border-radius: 8px;">
+        <source src="/glitch-assets/recvid.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <p style="margin-top: 10px;">Time-lapse of orbital object motion over a 30-minute observation window.</p>
@@ -127,7 +154,7 @@
   <footer class="footer">
     <p>© 2024 Temporary Institute for Unification of Knowledge</p>
     <p>A Massachusetts 501(c)(3) organization</p>
-    <p><a href="bylaws.pdf" target="_blank">View our Bylaws</a></p>
+    <p><a href="bylaws.pdf" target="_blank" rel="noopener noreferrer">View our Bylaws</a></p>
   </footer>
 
   <!-- AOS Script -->
